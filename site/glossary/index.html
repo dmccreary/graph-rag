@@ -1,0 +1,1109 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for learning Graph RAG">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/glossary/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../how-we-built-this-site/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Glossary - Graph RAG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#glossary-of-terms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Graph RAG
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Glossary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/graph-rag" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Graph RAG
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/graph-rag" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iso-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      ISO Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Retrieval-Augmented Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-attributed-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text-Attributed Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-focused-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query-Focused Summarization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-based-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Based Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Expansion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Decomposition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Merging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-pruning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Pruning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-enhanced-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Enhanced Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hybrid-granularities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Granularities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-base-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Base Question Answering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgraphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgraphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paths
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triplets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triplets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-based-indexing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Based Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-parametric-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-parametric Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lm-based-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      LM-based Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnn-based-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNN-based Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hybrid-granularities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Granularities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieval-Augmented Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphrag-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphRAG Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entity Extraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-sequential-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Sequential Question Answering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iso-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      ISO Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Retrieval-Augmented Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-attributed-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text-Attributed Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-focused-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query-Focused Summarization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-based-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Based Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Expansion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Decomposition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Merging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-pruning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Pruning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-enhanced-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Enhanced Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hybrid-granularities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Granularities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-base-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Base Question Answering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgraphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgraphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paths
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triplets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triplets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-based-indexing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph-Based Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-parametric-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-parametric Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lm-based-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      LM-based Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnn-based-retriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNN-based Retriever
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hybrid-granularities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Granularities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieval-Augmented Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphrag-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphRAG Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entity Extraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-sequential-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Sequential Question Answering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/glossary.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="glossary-of-terms">Glossary of Terms</h1>
+<h4 id="iso-definition">ISO Definition</h4>
+<p>A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:</p>
+<ol>
+<li>Precise</li>
+<li>Concise</li>
+<li>Distinct</li>
+<li>Non-circular</li>
+<li>Unencumbered with business rules</li>
+</ol>
+<h4 id="graph-retrieval-augmented-generation">Graph Retrieval-Augmented Generation</h4>
+<p><strong>Abbreviation</strong>: GraphRAG<br/></p>
+<p>A methodology that enhances Retrieval-Augmented Generation (RAG) by leveraging graph data structures. GraphRAG retrieves elements such as nodes, triples, paths, or subgraphs from a pre-constructed graph database, allowing for more precise and context-aware generation by considering the interconnections between texts​(GraphRAG-Survey).</p>
+<h4 id="graph-neural-networks">Graph Neural Networks</h4>
+<p><strong>Abbreviation</strong>: GNNs<br/></p>
+<p>A class of deep learning models specifically designed to process data structured as graphs. GNNs use a message-passing framework where information is aggregated from neighboring nodes and edges to update node representations. They are used in GraphRAG to model graph data for retrieval and generation​(GraphRAG-Survey).</p>
+<h4 id="text-attributed-graphs">Text-Attributed Graphs</h4>
+<p><strong>Abbreviation</strong>: TAGs<br/></p>
+<p>A universal format for graph data used in GraphRAG, where nodes and edges are associated with textual attributes. TAGs can represent knowledge graphs and other graph structures, enabling the retrieval of complex relational knowledge for use in generation tasks​(GraphRAG-Survey).</p>
+<h4 id="query-focused-summarization">Query-Focused Summarization</h4>
+<p><strong>Abbreviation</strong>: QFS<br/></p>
+<p>A task in natural language processing where the goal is to generate a summary of a document or set of documents that is focused on a specific query. GraphRAG enhances QFS by retrieving relevant subgraphs that capture the broader context and interconnections within the graph structure​(GraphRAG-Survey).</p>
+<h4 id="graph-based-indexing">Graph-Based Indexing</h4>
+<p><strong>Abbreviation</strong>: G-Indexing<br/></p>
+<p>A method used in GraphRAG to enhance the efficiency and speed of querying operations on graph databases. It influences subsequent retrieval methods and determines how the graph data is structured for optimal retrieval​(GraphRAG-Survey).</p>
+<h4 id="query-expansion">Query Expansion</h4>
+<p>A pre-processing technique used in query enhancement to improve search results by supplementing or refining the original query with additional relevant terms or concepts. It aims to capture lexical variations and expand the information content of the query​(GraphRAG-Survey).</p>
+<h4 id="query-decomposition">Query Decomposition</h4>
+<p>A technique that breaks down the original user query into smaller, more specific sub-queries. Each sub-query focuses on a particular aspect of the original query, making it easier to retrieve pertinent information and reduce the complexity of language queries​(GraphRAG-Survey).</p>
+<h4 id="knowledge-merging">Knowledge Merging</h4>
+<p>A post-retrieval enhancement strategy in GraphRAG that involves combining multiple pieces of retrieved information to provide a comprehensive view. This process assists in consolidating knowledge, improving the relevance and completeness of the final retrieved results​(GraphRAG-Survey).</p>
+<h4 id="knowledge-pruning">Knowledge Pruning</h4>
+<p>A technique used after initial retrieval to refine and improve the quality of the retrieved information by removing redundant or less relevant data. It aims to ensure that the final results are highly pertinent to the user's query, enhancing the relevance of the information presented​(GraphRAG-Survey).</p>
+<h4 id="graph-enhanced-generation">Graph-Enhanced Generation</h4>
+<p><strong>Abbreviation</strong>: G-Generation<br/></p>
+<p>The phase in GraphRAG where meaningful outputs or responses are synthesized based on the retrieved graph data. This stage involves taking the query, retrieved graph elements, and an optional prompt as inputs to generate a contextually relevant and accurate response​(GraphRAG-Survey).</p>
+<h4 id="hybrid-granularities">Hybrid Granularities</h4>
+<p>A retrieval approach in GraphRAG that combines multiple granularities, such as nodes, triplets, paths, and subgraphs, to capture both detailed relationships and broader contextual understanding. This method enhances the relevance and comprehensiveness of the retrieved data by balancing between retrieval content and efficiency​(GraphRAG-Survey).</p>
+<h4 id="language-models">Language Models</h4>
+<p><strong>Abbreviation</strong>: LMs<br/>
+Language models (LMs) are advanced AI models designed to understand and generate human language. They are mainly classified into two types: discriminative models, like BERT and RoBERTa, which focus on tasks such as text classification, and generative models, like GPT-3 and GPT-4, which are used for tasks like machine translation and text generation​(GraphRAG-Survey).</p>
+<h4 id="knowledge-base-question-answering">Knowledge Base Question Answering</h4>
+<p><strong>Abbreviation</strong>: KBQA<br/></p>
+<p>A task in natural language processing focused on answering user queries based on external knowledge bases. KBQA methods are typically categorized into Information Retrieval (IR)-based methods, which retrieve information from knowledge graphs, and Semantic Parsing (SP)-based methods, which generate logical forms to query knowledge bases​(GraphRAG-Survey).</p>
+<h4 id="subgraphs">Subgraphs</h4>
+<p>In GraphRAG, subgraphs refer to comprehensive subsets of a graph that encapsulate relational contexts within a larger structure. Retrieving subgraphs allows for capturing complex patterns, sequences, and dependencies, which are crucial for a deeper understanding of semantic connections in graph-based tasks​(GraphRAG-Survey).</p>
+<h4 id="paths">Paths</h4>
+<p>Paths represent sequences of relationships between entities within a graph. In GraphRAG, retrieving paths enhances contextual understanding and reasoning capabilities by capturing complex relationships and dependencies​(GraphRAG-Survey).</p>
+<h4 id="triplets">Triplets</h4>
+<p>Triplets in graph databases consist of entities and their relationships, represented as subject-predicate-object tuples. This structured representation is used in GraphRAG to retrieve and understand relational data within a graph​(GraphRAG-Survey).</p>
+<h4 id="graph-neural-networks_1">Graph Neural Networks</h4>
+<p><strong>Abbreviation</strong>: GNNs
+GNNs are a class of deep learning models designed to handle graph-structured data. They operate by aggregating information from a node's neighbors to generate node embeddings, which can then be used for various tasks, such as node classification or graph-based retrieval. In GraphRAG, GNNs are often employed to encode graph data and guide retrieval processes​(GraphRAG-Survey).</p>
+<h4 id="graph-based-indexing_1">Graph-Based Indexing</h4>
+<p>Graph-Based Indexing is a method for organizing and indexing graph data to optimize retrieval operations. This involves mapping node and edge properties, establishing pointers between connected nodes, and organizing the data to support efficient traversal and retrieval. It plays a crucial role in enhancing query efficiency in GraphRAG​(GraphRAG-Survey).</p>
+<h4 id="vector-indexing">Vector Indexing</h4>
+<p>Vector Indexing involves converting graph data into vector representations to facilitate fast retrieval. This is particularly useful for entity linking and rapid query processing, where vector search algorithms like Locality Sensitive Hashing (LSH) are applied. It enables efficient searches and helps maintain structural information during retrieval​(GraphRAG-Survey).</p>
+<h4 id="non-parametric-retriever">Non-parametric Retriever</h4>
+<p>Non-parametric retrievers are based on heuristic rules or traditional graph search algorithms. They do not rely on deep-learning models, making them efficient for retrieval tasks that require high speed. These methods typically involve pre-processing steps like entity linking and are used in GraphRAG for tasks like subgraph extraction​(GraphRAG-Survey).</p>
+<h4 id="lm-based-retriever">LM-based Retriever</h4>
+<p>LM-based retrievers leverage the natural language processing capabilities of language models to retrieve relevant graph data based on text queries. These models are particularly effective for interpreting and processing diverse queries in GraphRAG. They are used to generate reasoning paths and assist in retrieving the most relevant graph elements​(GraphRAG-Survey).</p>
+<h4 id="gnn-based-retriever">GNN-based Retriever</h4>
+<p>GNN-based retrievers use Graph Neural Networks to understand and process graph structures. They encode graph data, score different retrieval granularities based on similarity to the query, and guide the retrieval process within GraphRAG. These retrievers are particularly adept at handling complex graph data structures​(GraphRAG-Survey).</p>
+<h4 id="hybrid-granularities_1">Hybrid Granularities</h4>
+<p>Hybrid Granularities involve retrieving graph data at multiple levels of detail, such as nodes, triplets, paths, and subgraphs, to capture both fine-grained and broad contextual information. This approach enhances the relevance and comprehensiveness of the retrieved data, making it useful for complex queries within GraphRAG ​(GraphRAG-Survey).</p>
+<h4 id="retrieval-augmented-generation">Retrieval-Augmented Generation</h4>
+<p><strong>Abbreviation</strong>: RAG
+Retrieval-Augmented Generation is a methodology that integrates external knowledge retrieval with the generation process of language models. By dynamically querying a large text corpus, RAG enhances the contextual depth, factual accuracy, and relevance of the content generated by language models. It addresses challenges such as hallucinations, lack of domain-specific knowledge, and outdated information by incorporating relevant factual knowledge into the responses​(GraphRAG-Survey)​(GraphRAG-Survey).</p>
+<h4 id="graphrag-step">GraphRAG Step</h4>
+<p>The key steps in a GraphRAG process, as outlined in the Summary paper, are:</p>
+<ol>
+<li>Graph-Based Indexing (G-Indexing)</li>
+</ol>
+<p>This initial phase involves constructing or identifying a graph database that aligns with the downstream tasks. The indexing process typically includes mapping node and edge properties, establishing pointers between connected nodes, and organizing the data to support fast traversal and retrieval operations. The quality of this step directly impacts the efficiency and effectiveness of the retrieval process.</p>
+<ol>
+<li>Graph-Guided Retrieval (G-Retrieval)</li>
+</ol>
+<p>Following the indexing phase, the retrieval phase focuses on extracting relevant information from the graph database based on the user query. This involves selecting the most pertinent graph elements, such as entities, triplets, paths, or subgraphs, using retrieval algorithms. The goal is to find the graph elements that best match the query and support the next stage of generation.</p>
+<ol>
+<li>Graph-Enhanced Generation (G-Generation)</li>
+</ol>
+<p>In the final phase, the retrieved graph elements are used to generate meaningful responses or outputs. This stage involves taking the query, the retrieved graph elements, and an optional prompt as inputs for a generation model, which produces the final response. The process is enhanced by the structural and relational knowledge embedded in the graph data.</p>
+<p>These steps outline the comprehensive workflow of GraphRAG, emphasizing the importance of each phase in achieving accurate, contextually relevant responses based on graph-structured data​(GraphRAG-Survey).</p>
+<h4 id="entity-extraction">Entity Extraction</h4>
+<p>Entity extraction in the GraphRAG process plays a critical role in identifying and linking entities mentioned in the input query to corresponding entities in a knowledge graph. This step is essential for effectively retrieving relevant information and establishing connections between the textual data and the structured graph data.</p>
+<p>Entity extraction is often considered a pre-processing step in GraphRAG. It involves identifying key entities within the user's query and linking them to their corresponding nodes in the graph database. This ensures that the retrieval process can focus on the correct parts of the graph, thereby enhancing the relevance and accuracy of the retrieved information.</p>
+<p>It is particularly crucial in the <strong>Graph-Guided Retrieval</strong> phase, where entities identified in the text are mapped to their graph representations. This mapping allows the retrieval algorithms to more accurately extract the relevant subgraphs, nodes, or paths that correspond to the query.</p>
+<p>Entity Extraction<strong> typically occurs at the beginning of the </strong>Graph-Guided Retrieval** phase. After the graph-based indexing phase, where the graph is prepared and indexed for efficient querying, entity extraction takes place to identify which parts of the graph are relevant to the query. This step directly influences the subsequent retrieval processes, ensuring that the retrieval is focused and efficient.</p>
+<p>Entity extraction is thus a foundational step in aligning the unstructured text query with the structured graph data, enabling the GraphRAG system to retrieve and generate more contextually relevant responses​(GraphRAG-Survey)​(GraphRAG-Survey).</p>
+<h4 id="complex-sequential-question-answering">Complex Sequential Question Answering</h4>
+<p><strong>Abbreviation</strong>: CSQA
+Complex Sequential Question Answering refers to a task in natural language processing that involves answering a series of interrelated questions where the context or the answers to previous questions impact subsequent questions. This task requires handling complex dependencies and reasoning chains, often relying on structured knowledge bases or graphs to provide accurate and context-aware responses. In GraphRAG, CSQA tasks benefit from the ability to retrieve and reason over graph-structured data that captures these intricate relationships​(GraphRAG-Survey).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../how-we-built-this-site/" class="md-footer__link md-footer__link--next" aria-label="Next: How We Built This Site">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                How We Built This Site
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

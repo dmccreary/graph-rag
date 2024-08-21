@@ -2,4 +2,4 @@
 
 Website: 
 
-[https://dmccreary.github.io/mkdocs-template/](https://dmccreary.github.io/mkdocs-template/)
+[https://dmccreary.github.io/graph-rag](https://dmccreary.github.io/graph-rag/)
