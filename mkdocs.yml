@@ -1,15 +1,13 @@
-site_name: Mkdocs Template Site
-site_description: 'DESCRIPTION All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_name: Graph RAG
+site_description: 'Resources for learning Graph RAG'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
-site_url: 'https://dmccreary.github.io/mkdocs-template/'
-repo_url: 'https://github.com/dmccreary/mkdocs-template'
+site_url: 'https://dmccreary.github.io/graph-rag/'
+repo_url: 'https://github.com/dmccreary/graph-rag'
 edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
-  - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
