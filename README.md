@@ -1,4 +1,4 @@
-# Template Mkdocs Repo
+# Graph RAG Resources
 
 Website: 
 
