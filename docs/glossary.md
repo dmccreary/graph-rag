@@ -1,5 +1,17 @@
 # Graph RAG Glossary
 
+#### Community Detection
+
+Community detection is the process of identifying groups of nodes within a network that are more densely connected to each other than to the rest of the network. This technique is used to reveal the modular structure of networks, uncovering clusters or communities that share common properties or functions.
+
+For example, in social network analysis, community detection can help identify groups of users who frequently interact with each other, such as friend circles or interest groups.
+
+#### Document Chunking
+
+Document chunking is the process of dividing a large document into smaller, manageable sections or chunks. This technique is commonly used in natural language processing to facilitate tasks such as information retrieval, summarization, or content analysis by processing these smaller chunks individually.
+
+For example, in a question-answering system, document chunking enables the model to focus on specific sections of a document, improving accuracy and efficiency in finding relevant answers.
+
 #### Complex Sequential Question Answering
 
 **Abbreviation**: CSQA
@@ -19,13 +31,11 @@ Entity extraction is thus a foundational step in aligning the unstructured text 
 
 GNN-based retrievers use Graph Neural Networks to understand and process graph structures. They encode graph data, score different retrieval granularities based on similarity to the query, and guide the retrieval process within GraphRAG. These retrievers are particularly adept at handling complex graph data structures​(GraphRAG-Survey).
 
-#### Graph Neural Networks
+#### Graph Neural Networks (GNN)
 
-**Abbreviation**: GNNs
 GNNs are a class of deep learning models designed to handle graph-structured data. They operate by aggregating information from a node's neighbors to generate node embeddings, which can then be used for various tasks, such as node classification or graph-based retrieval. In GraphRAG, GNNs are often employed to encode graph data and guide retrieval processes​(GraphRAG-Survey).
 
-#### Graph Retrieval-Augmented Generation
-**Abbreviation**: GraphRAG<br/>
+#### Graph Retrieval-Augmented Generation (GraphRAG)
 
 A methodology that enhances Retrieval-Augmented Generation (RAG) by leveraging graph data structures. GraphRAG retrieves elements such as nodes, triples, paths, or subgraphs from a pre-constructed graph database, allowing for more precise and context-aware generation by considering the interconnections between texts​(GraphRAG-Survey).
 
@@ -56,6 +66,11 @@ In the final phase, the retrieved graph elements are used to generate meaningful
 
 These steps outline the comprehensive workflow of GraphRAG, emphasizing the importance of each phase in achieving accurate, contextually relevant responses based on graph-structured data​(GraphRAG-Survey).
 
+#### Hallucination
+
+Hallucination in natural language processing refers to the generation of content by a model that is factually incorrect, nonsensical, or not supported by the input data. This occurs when the model produces information that appears coherent but is either fabricated or irrelevant to the context.
+
+For example, a language model might hallucinate by generating a detailed but entirely fictitious historical event when asked about a specific time period.
 
 #### Hybrid Granularities
 
@@ -92,6 +107,14 @@ LM-based retrievers leverage the natural language processing capabilities of lan
 
 **Abbreviation**: LMs<br/>
 Language models (LMs) are advanced AI models designed to understand and generate human language. They are mainly classified into two types: discriminative models, like BERT and RoBERTa, which focus on tasks such as text classification, and generative models, like GPT-3 and GPT-4, which are used for tasks like machine translation and text generation​(GraphRAG-Survey).
+
+#### Leiden Algorithm
+
+The Leiden Algorithm is an iterative method used for community detection in large networks. It improves upon the Louvain algorithm by guaranteeing well-connected communities, reducing the likelihood of disconnected or fragmented clusters within the detected communities.
+
+For example, the Leiden Algorithm is often applied in graph analysis to identify groups of nodes that are more densely connected internally, such as in social network analysis to find clusters of users with similar interests.
+
+Leiden algorithm, are used to partition the graph into communities of nodes with stronger connections to one another than to other nodes in the graph. This helps in grouping closely related entities together
 
 #### Non-parametric Retriever
 
