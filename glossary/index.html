@@ -295,6 +295,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Detection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#document-chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Chunking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#complex-sequential-question-answering" class="md-nav__link">
     <span class="md-ellipsis">
       Complex Sequential Question Answering
@@ -313,18 +331,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph-neural-networks" class="md-nav__link">
+  <a href="#graph-neural-networks-gnn" class="md-nav__link">
     <span class="md-ellipsis">
-      Graph Neural Networks
+      Graph Neural Networks (GNN)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph-retrieval-augmented-generation" class="md-nav__link">
+  <a href="#graph-retrieval-augmented-generation-graphrag" class="md-nav__link">
     <span class="md-ellipsis">
-      Graph Retrieval-Augmented Generation
+      Graph Retrieval-Augmented Generation (GraphRAG)
     </span>
   </a>
   
@@ -352,6 +370,15 @@
   <a href="#graphrag-step" class="md-nav__link">
     <span class="md-ellipsis">
       GraphRAG Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hallucination
     </span>
   </a>
   
@@ -415,6 +442,15 @@
   <a href="#language-models" class="md-nav__link">
     <span class="md-ellipsis">
       Language Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leiden-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leiden Algorithm
     </span>
   </a>
   
@@ -605,6 +641,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Detection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#document-chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Chunking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#complex-sequential-question-answering" class="md-nav__link">
     <span class="md-ellipsis">
       Complex Sequential Question Answering
@@ -623,18 +677,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph-neural-networks" class="md-nav__link">
+  <a href="#graph-neural-networks-gnn" class="md-nav__link">
     <span class="md-ellipsis">
-      Graph Neural Networks
+      Graph Neural Networks (GNN)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph-retrieval-augmented-generation" class="md-nav__link">
+  <a href="#graph-retrieval-augmented-generation-graphrag" class="md-nav__link">
     <span class="md-ellipsis">
-      Graph Retrieval-Augmented Generation
+      Graph Retrieval-Augmented Generation (GraphRAG)
     </span>
   </a>
   
@@ -662,6 +716,15 @@
   <a href="#graphrag-step" class="md-nav__link">
     <span class="md-ellipsis">
       GraphRAG Step
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hallucination
     </span>
   </a>
   
@@ -725,6 +788,15 @@
   <a href="#language-models" class="md-nav__link">
     <span class="md-ellipsis">
       Language Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leiden-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leiden Algorithm
     </span>
   </a>
   
@@ -844,6 +916,12 @@
 
 
 <h1 id="graph-rag-glossary">Graph RAG Glossary</h1>
+<h4 id="community-detection">Community Detection</h4>
+<p>Community detection is the process of identifying groups of nodes within a network that are more densely connected to each other than to the rest of the network. This technique is used to reveal the modular structure of networks, uncovering clusters or communities that share common properties or functions.</p>
+<p>For example, in social network analysis, community detection can help identify groups of users who frequently interact with each other, such as friend circles or interest groups.</p>
+<h4 id="document-chunking">Document Chunking</h4>
+<p>Document chunking is the process of dividing a large document into smaller, manageable sections or chunks. This technique is commonly used in natural language processing to facilitate tasks such as information retrieval, summarization, or content analysis by processing these smaller chunks individually.</p>
+<p>For example, in a question-answering system, document chunking enables the model to focus on specific sections of a document, improving accuracy and efficiency in finding relevant answers.</p>
 <h4 id="complex-sequential-question-answering">Complex Sequential Question Answering</h4>
 <p><strong>Abbreviation</strong>: CSQA
 Complex Sequential Question Answering refers to a task in natural language processing that involves answering a series of interrelated questions where the context or the answers to previous questions impact subsequent questions. This task requires handling complex dependencies and reasoning chains, often relying on structured knowledge bases or graphs to provide accurate and context-aware responses. In GraphRAG, CSQA tasks benefit from the ability to retrieve and reason over graph-structured data that captures these intricate relationships​(GraphRAG-Survey).#### Entity Extraction</p>
@@ -854,11 +932,9 @@ Complex Sequential Question Answering refers to a task in natural language proce
 <p>Entity extraction is thus a foundational step in aligning the unstructured text query with the structured graph data, enabling the GraphRAG system to retrieve and generate more contextually relevant responses​(GraphRAG-Survey)​(GraphRAG-Survey).</p>
 <h4 id="gnn-based-retriever">GNN-based Retriever</h4>
 <p>GNN-based retrievers use Graph Neural Networks to understand and process graph structures. They encode graph data, score different retrieval granularities based on similarity to the query, and guide the retrieval process within GraphRAG. These retrievers are particularly adept at handling complex graph data structures​(GraphRAG-Survey).</p>
-<h4 id="graph-neural-networks">Graph Neural Networks</h4>
-<p><strong>Abbreviation</strong>: GNNs
-GNNs are a class of deep learning models designed to handle graph-structured data. They operate by aggregating information from a node's neighbors to generate node embeddings, which can then be used for various tasks, such as node classification or graph-based retrieval. In GraphRAG, GNNs are often employed to encode graph data and guide retrieval processes​(GraphRAG-Survey).</p>
-<h4 id="graph-retrieval-augmented-generation">Graph Retrieval-Augmented Generation</h4>
-<p><strong>Abbreviation</strong>: GraphRAG<br/></p>
+<h4 id="graph-neural-networks-gnn">Graph Neural Networks (GNN)</h4>
+<p>GNNs are a class of deep learning models designed to handle graph-structured data. They operate by aggregating information from a node's neighbors to generate node embeddings, which can then be used for various tasks, such as node classification or graph-based retrieval. In GraphRAG, GNNs are often employed to encode graph data and guide retrieval processes​(GraphRAG-Survey).</p>
+<h4 id="graph-retrieval-augmented-generation-graphrag">Graph Retrieval-Augmented Generation (GraphRAG)</h4>
 <p>A methodology that enhances Retrieval-Augmented Generation (RAG) by leveraging graph data structures. GraphRAG retrieves elements such as nodes, triples, paths, or subgraphs from a pre-constructed graph database, allowing for more precise and context-aware generation by considering the interconnections between texts​(GraphRAG-Survey).</p>
 <h4 id="graph-based-indexing">Graph-Based Indexing</h4>
 <p>Graph-Based Indexing is a method for organizing and indexing graph data to optimize retrieval operations. This involves mapping node and edge properties, establishing pointers between connected nodes, and organizing the data to support efficient traversal and retrieval. It plays a crucial role in enhancing query efficiency in GraphRAG​(GraphRAG-Survey).</p>
@@ -880,6 +956,9 @@ GNNs are a class of deep learning models designed to handle graph-structured dat
 </ol>
 <p>In the final phase, the retrieved graph elements are used to generate meaningful responses or outputs. This stage involves taking the query, the retrieved graph elements, and an optional prompt as inputs for a generation model, which produces the final response. The process is enhanced by the structural and relational knowledge embedded in the graph data.</p>
 <p>These steps outline the comprehensive workflow of GraphRAG, emphasizing the importance of each phase in achieving accurate, contextually relevant responses based on graph-structured data​(GraphRAG-Survey).</p>
+<h4 id="hallucination">Hallucination</h4>
+<p>Hallucination in natural language processing refers to the generation of content by a model that is factually incorrect, nonsensical, or not supported by the input data. This occurs when the model produces information that appears coherent but is either fabricated or irrelevant to the context.</p>
+<p>For example, a language model might hallucinate by generating a detailed but entirely fictitious historical event when asked about a specific time period.</p>
 <h4 id="hybrid-granularities">Hybrid Granularities</h4>
 <p>Hybrid Granularities involve retrieving graph data at multiple levels of detail, such as nodes, triplets, paths, and subgraphs, to capture both fine-grained and broad contextual information. This approach enhances the relevance and comprehensiveness of the retrieved data, making it useful for complex queries within GraphRAG ​(GraphRAG-Survey).</p>
 <h4 id="iso-definition">ISO Definition</h4>
@@ -903,6 +982,10 @@ GNNs are a class of deep learning models designed to handle graph-structured dat
 <h4 id="language-models">Language Models</h4>
 <p><strong>Abbreviation</strong>: LMs<br/>
 Language models (LMs) are advanced AI models designed to understand and generate human language. They are mainly classified into two types: discriminative models, like BERT and RoBERTa, which focus on tasks such as text classification, and generative models, like GPT-3 and GPT-4, which are used for tasks like machine translation and text generation​(GraphRAG-Survey).</p>
+<h4 id="leiden-algorithm">Leiden Algorithm</h4>
+<p>The Leiden Algorithm is an iterative method used for community detection in large networks. It improves upon the Louvain algorithm by guaranteeing well-connected communities, reducing the likelihood of disconnected or fragmented clusters within the detected communities.</p>
+<p>For example, the Leiden Algorithm is often applied in graph analysis to identify groups of nodes that are more densely connected internally, such as in social network analysis to find clusters of users with similar interests.</p>
+<p>Leiden algorithm, are used to partition the graph into communities of nodes with stronger connections to one another than to other nodes in the graph. This helps in grouping closely related entities together</p>
 <h4 id="non-parametric-retriever">Non-parametric Retriever</h4>
 <p>Non-parametric retrievers are based on heuristic rules or traditional graph search algorithms. They do not rely on deep-learning models, making them efficient for retrieval tasks that require high speed. These methods typically involve pre-processing steps like entity linking and are used in GraphRAG for tasks like subgraph extraction​(GraphRAG-Survey).</p>
 <h4 id="paths">Paths</h4>
