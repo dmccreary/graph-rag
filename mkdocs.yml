@@ -8,6 +8,10 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
+  - Graph RAG Concepts:
+    - Introduction: concepts/index.md
+    - Prompts: concepts/prompts.md
+    - Ollama: concepts/ollama.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
