@@ -8,7 +8,8 @@ organizations, locations, and events. For each entity, return the output in a
 JSON format where each entity is represented as a node, and relationships
 between entities are represented as edges. 
 Ensure that the output follows this structure:
-
+```
+```json
 {
     "nodes": [
         {"id": "1", "label": "Person", "name": "John Doe"},
@@ -23,7 +24,8 @@ Ensure that the output follows this structure:
         {"source": "3", "target": "4", "relationship": "location_of"}
     ]
 }
-
+```
+```
 Please make sure to include appropriate relationships between the entities wherever applicable.  Avoid duplication of edges.
-
+```
 
