@@ -12,28 +12,28 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/">
+        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/concept-networks/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../concept-extraction/">
       
       
-        <link rel="next" href="entity-extraction/">
+        <link rel="next" href="../wordnet/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
-        <title>Introduction - Graph RAG</title>
+        <title>Concept Networks - Graph RAG</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphrag-concepts" class="md-skip">
+        <a href="#concept-networks" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Concept Networks
             
           </span>
         </div>
@@ -199,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -229,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -285,7 +285,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -296,7 +296,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="entity-extraction/" class="md-nav__link">
+      <a href="../entity-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-extraction/" class="md-nav__link">
+      <a href="../concept-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -357,10 +357,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="concept-networks/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Concept Networks
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -369,6 +389,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-components-of-a-concept-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components of a Concept Network:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-and-importance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose and Importance:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -381,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="wordnet/" class="md-nav__link">
+      <a href="../wordnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -402,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph-algorithms/" class="md-nav__link">
+      <a href="../graph-algorithms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="prompts/" class="md-nav__link">
+      <a href="../prompts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ollama/" class="md-nav__link">
+      <a href="../ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,18 +650,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#beginning-concepts" class="md-nav__link">
+  <a href="#key-components-of-a-concept-network" class="md-nav__link">
     <span class="md-ellipsis">
-      Beginning Concepts
+      Key Components of a Concept Network:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-concepts" class="md-nav__link">
+  <a href="#purpose-and-importance" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Concepts
+      Purpose and Importance:
     </span>
   </a>
   
@@ -624,7 +682,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/concept-networks.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -632,25 +690,29 @@
   
 
 
-<h1 id="graphrag-concepts">GraphRAG Concepts</h1>
-<h2 id="beginning-concepts">Beginning Concepts</h2>
+<h1 id="concept-networks">Concept Networks</h1>
+<p>A <a href="../../glossary/#concept-network">Concept Network</a> or Concept Graph is a structured representation of related terms and concepts that captures the relationships between them, such as synonyms, alternate terms, abbreviations, broader terms, and narrower terms. It serves as a semantic map that links various expressions of an idea or entity, enabling the system to recognize and interpret different linguistic variations of the same concept.</p>
+<h3 id="key-components-of-a-concept-network">Key Components of a Concept Network:</h3>
 <ol>
-<li>LLMs</li>
-<li>Graph databases</li>
-<li>Vector stores</li>
-<li>RAG</li>
-<li>GraphRAG</li>
-<li><a href="prompts/">Prompts</a></li>
-<li><a href="ollama/">Ollama</a></li>
+<li><strong>Synonyms</strong>: Words or phrases that have the same or nearly the same meaning (e.g., "car" and "automobile").  A group of words that have the same mean is often referred to as a [synset].</li>
+<li><strong>Alternate Terms</strong>: Different expressions or names that refer to the same concept (e.g., "AI" and "Artificial Intelligence").</li>
+<li><strong>Abbreviations</strong>: Shortened forms of terms that represent the same concept (e.g., "USA" for "United States of America").</li>
+<li><strong>Broader Terms</strong>: General categories that encompass the concept (e.g., "vehicle" as a broader term for "car").</li>
+<li><strong>Narrower Terms</strong>: More specific instances or subcategories of the concept (e.g., "sedan" as a narrower term for "car").</li>
+<li><strong>Related Terms</strong>: Concepts that are not synonyms but are associated with the main concept (e.g., "engine" related to "car").</li>
+<li><strong>Antonymys:</strong> Terms that represent the opposite meaning of a term.  When combined with a negation, an opposite that imply the opposite of concept. </li>
 </ol>
-<h2 id="advanced-concepts">Advanced Concepts</h2>
-<ol>
-<li>NLP Pipelines</li>
-<li>Entity Extraction</li>
-<li>Concept Extraction</li>
-<li>Concept Networks</li>
-<li><a href="wordnet/">Wordnet</a></li>
-</ol>
+<h3 id="purpose-and-importance">Purpose and Importance:</h3>
+<ul>
+<li><strong>Semantic Understanding</strong>: Concept Networks enhance a system's ability to understand and interpret text by recognizing different ways a concept can be expressed.</li>
+<li><strong>Information Retrieval</strong>: They improve search and retrieval processes by linking queries to relevant terms, even if the exact term is not used.</li>
+<li><strong>Text Analysis</strong>: Concept Networks are crucial in tasks like text classification, clustering, and summarization, where understanding the nuances of language is key.</li>
+</ul>
+<p>In summary, a <strong>Concept Network</strong> in NLP is a semantic framework that captures the various ways a concept can be expressed, facilitating better understanding, retrieval, and analysis of textual information.</p>
+<ul>
+<li><strong>Ontology or Knowledge Graphs</strong>: Pre-existing ontologies or knowledge graphs can be used to map words and phrases to abstract concepts. For example, the word "justice" might be linked to related concepts like "fairness" or "law" in an ontology, enabling the extraction of these abstract ideas.</li>
+<li><strong>Synonym and Hypernym Identification</strong>: Using lexical databases like WordNet, abstract concepts can be identified by recognizing synonyms and hypernyms (more general terms) that point to a higher-level concept.</li>
+</ul>
 
 
 
@@ -686,7 +748,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../concept-extraction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Concept Extraction">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -696,20 +758,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Concept Extraction
               </div>
             </div>
           </a>
         
         
           
-          <a href="entity-extraction/" class="md-footer__link md-footer__link--next" aria-label="Next: Entity Extraction">
+          <a href="../wordnet/" class="md-footer__link md-footer__link--next" aria-label="Next: Wordnet">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Entity Extraction
+                Wordnet
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -743,10 +805,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>

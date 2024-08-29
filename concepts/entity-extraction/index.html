@@ -12,28 +12,28 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/">
+        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/entity-extraction/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="entity-extraction/">
+        <link rel="next" href="../concept-extraction/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
-        <title>Introduction - Graph RAG</title>
+        <title>Entity Extraction - Graph RAG</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphrag-concepts" class="md-skip">
+        <a href="#entity-extraction" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Entity Extraction
             
           </span>
         </div>
@@ -199,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -229,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -285,7 +285,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -296,7 +296,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -315,10 +315,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="entity-extraction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Entity Extraction
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -327,6 +347,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-entity-extraction-is-important-in-the-graphrag-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Entity Extraction is Important in the GraphRAG Algorithm:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Entity Extraction is Important in the GraphRAG Algorithm:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancing-information-retrieval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancing Information Retrieval
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enhancing Information Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-contextual-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Contextual Understanding:**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-query-mapping-and-response-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Query Mapping and Response Generation:**
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-complex-relationships-and-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supporting Complex Relationships and Reasoning:**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#picking-the-right-granularity-of-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Picking the Right Granularity of Entities
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -339,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-extraction/" class="md-nav__link">
+      <a href="../concept-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-networks/" class="md-nav__link">
+      <a href="../concept-networks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="wordnet/" class="md-nav__link">
+      <a href="../wordnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -402,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph-algorithms/" class="md-nav__link">
+      <a href="../graph-algorithms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="prompts/" class="md-nav__link">
+      <a href="../prompts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ollama/" class="md-nav__link">
+      <a href="../ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,18 +707,75 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#beginning-concepts" class="md-nav__link">
+  <a href="#why-entity-extraction-is-important-in-the-graphrag-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
-      Beginning Concepts
+      Why Entity Extraction is Important in the GraphRAG Algorithm:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Entity Extraction is Important in the GraphRAG Algorithm:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Knowledge Graphs
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancing-information-retrieval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancing Information Retrieval
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enhancing Information Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-contextual-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Contextual Understanding:**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-query-mapping-and-response-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Query Mapping and Response Generation:**
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-complex-relationships-and-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supporting Complex Relationships and Reasoning:**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#advanced-concepts" class="md-nav__link">
+  <a href="#picking-the-right-granularity-of-entities" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Concepts
+      Picking the Right Granularity of Entities
     </span>
   </a>
   
@@ -624,7 +796,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/entity-extraction.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -632,25 +804,39 @@
   
 
 
-<h1 id="graphrag-concepts">GraphRAG Concepts</h1>
-<h2 id="beginning-concepts">Beginning Concepts</h2>
-<ol>
-<li>LLMs</li>
-<li>Graph databases</li>
-<li>Vector stores</li>
-<li>RAG</li>
-<li>GraphRAG</li>
-<li><a href="prompts/">Prompts</a></li>
-<li><a href="ollama/">Ollama</a></li>
-</ol>
-<h2 id="advanced-concepts">Advanced Concepts</h2>
-<ol>
-<li>NLP Pipelines</li>
-<li>Entity Extraction</li>
-<li>Concept Extraction</li>
-<li>Concept Networks</li>
-<li><a href="wordnet/">Wordnet</a></li>
-</ol>
+<h1 id="entity-extraction">Entity Extraction</h1>
+<p><a href="../../glossary/#entity-extraction">Entity Extraction</a> is the process of identifying and categorizing key pieces of information (entities) from text, such as names of people, organizations, locations, dates, and other specific concepts. These entities are often represented by proper nouns or specific phrases that are crucial to understanding the text's meaning.</p>
+<p>Entity extraction in the GraphRAG process plays a critical role in identifying and linking entities mentioned in the input query to corresponding entities in a knowledge graph. This step is essential for effectively retrieving relevant information and establishing connections between the textual data and the structured graph data.</p>
+<p>Entity extraction is often considered a pre-processing step in GraphRAG. It involves identifying key entities within the user's query and linking them to their corresponding nodes in the graph database. This ensures that the retrieval process can focus on the correct parts of the graph, thereby enhancing the relevance and accuracy of the retrieved information.</p>
+<p>It is particularly crucial in the <strong>Graph-Guided Retrieval</strong> phase, where entities identified in the text are mapped to their graph representations. This mapping allows the retrieval algorithms to more accurately extract the relevant subgraphs, nodes, or paths that correspond to the query.</p>
+<p>Entity Extraction<strong> typically occurs at the beginning of the </strong>Graph-Guided Retrieval** phase. After the graph-based indexing phase, where the graph is prepared and indexed for efficient querying, entity extraction takes place to identify which parts of the graph are relevant to the query. This step directly influences the subsequent retrieval processes, ensuring that the retrieval is focused and efficient.</p>
+<p>Entity extraction is thus a foundational step in aligning the unstructured text query with the structured graph data, enabling the GraphRAG system to retrieve and generate more contextually relevant responses​(GraphRAG-Survey)​(GraphRAG-Survey).</p>
+<h2 id="why-entity-extraction-is-important-in-the-graphrag-algorithm">Why Entity Extraction is Important in the GraphRAG Algorithm:</h2>
+<h3 id="building-knowledge-graphs">Building Knowledge Graphs</h3>
+<p>Entity extraction is essential for constructing knowledge graphs, which are structured representations of information. By identifying entities, the GraphRAG algorithm can map these entities as nodes in the graph, forming the foundation for connecting and linking various pieces of information.</p>
+<h3 id="enhancing-information-retrieval">Enhancing Information Retrieval</h3>
+<p>In the context of the GraphRAG (Graph Retrieval-Augmented Generation) algorithm, entity extraction allows for precise retrieval of relevant information from a knowledge graph. When a user query is mapped to specific entities, the algorithm can more effectively navigate the graph to find accurate and contextually relevant information.</p>
+<h4 id="enabling-contextual-understanding">Enabling Contextual Understanding:**</h4>
+<p>By extracting entities, the algorithm can understand the context of a query or document. This contextual understanding is critical in generating accurate and relevant responses, as the algorithm can link the query to the right nodes and paths in the graph.</p>
+<h3 id="improving-query-mapping-and-response-generation">Improving Query Mapping and Response Generation:**</h3>
+<p>Entity extraction helps in accurately mapping user queries to the graph's structure. This mapping is crucial for the GraphRAG algorithm to generate responses that are informed by the specific entities and their relationships within the knowledge graph.</p>
+<h3 id="supporting-complex-relationships-and-reasoning">Supporting Complex Relationships and Reasoning:**</h3>
+<p>GraphRAG leverages the connections between entities in the knowledge graph to perform reasoning tasks, such as inferring new information or understanding complex relationships. Accurate entity extraction ensures that the graph is populated with the right entities, allowing for more sophisticated reasoning and inference capabilities.</p>
+<h2 id="picking-the-right-granularity-of-entities">Picking the Right Granularity of Entities</h2>
+<p>Every business application might have different requirements
+for locating entities in a document.  A legal system might
+only care about finding the names of parties in a contract
+and the effective dates of the contract.  For these
+applications only simple entity extraction rules that
+find People, Organizations, Locations and Events (POLE) entities
+might be needed.  This makes the entity extraction pipeline
+fast and low cost.</p>
+<p>Other applications want to understand more nuanced concepts in
+a document such as overall tone, development of ideas, analysis
+of assignments or commitments.  These tools need better granularity
+of extracting both abstract concepts and the relationship between
+these concepts.</p>
+<p>In summary, <strong>Entity Extraction</strong> is a foundational step in the GraphRAG algorithm, enabling the creation of a rich, structured knowledge graph and facilitating accurate, context-aware retrieval and generation of information.</p>
 
 
 
@@ -686,7 +872,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -696,20 +882,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Introduction
               </div>
             </div>
           </a>
         
         
           
-          <a href="entity-extraction/" class="md-footer__link md-footer__link--next" aria-label="Next: Entity Extraction">
+          <a href="../concept-extraction/" class="md-footer__link md-footer__link--next" aria-label="Next: Concept Extraction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Entity Extraction
+                Concept Extraction
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -743,10 +929,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>

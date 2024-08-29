@@ -12,28 +12,28 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/">
+        <link rel="canonical" href="https://dmccreary.github.io/graph-rag/concepts/wordnet/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../concept-networks/">
       
       
-        <link rel="next" href="entity-extraction/">
+        <link rel="next" href="../graph-algorithms/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
-        <title>Introduction - Graph RAG</title>
+        <title>Wordnet - Graph RAG</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphrag-concepts" class="md-skip">
+        <a href="#wordnet" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-header__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Wordnet
             
           </span>
         </div>
@@ -199,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
+    <a href="../.." title="Graph RAG" class="md-nav__button md-logo" aria-label="Graph RAG" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -229,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -285,7 +285,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -296,7 +296,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="entity-extraction/" class="md-nav__link">
+      <a href="../entity-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-extraction/" class="md-nav__link">
+      <a href="../concept-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-networks/" class="md-nav__link">
+      <a href="../concept-networks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,10 +378,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="wordnet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Wordnet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -390,6 +410,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-synonymy-synsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Synonymy (Synsets)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-antonymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Antonymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hypernymy-is-a-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Hypernymy (Is-a Relationship)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hyponymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Hyponymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-meronymy-part-whole-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Meronymy (Part-Whole Relationship)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-holonymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Holonymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-troponymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Troponymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-entailment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Entailment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-coordinate-terms-co-hyponyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Coordinate Terms (Co-Hyponyms)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-derivationally-related-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Derivationally Related Forms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-pertainyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Pertainyms
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -402,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="graph-algorithms/" class="md-nav__link">
+      <a href="../graph-algorithms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="prompts/" class="md-nav__link">
+      <a href="../prompts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ollama/" class="md-nav__link">
+      <a href="../ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,18 +731,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#beginning-concepts" class="md-nav__link">
+  <a href="#1-synonymy-synsets" class="md-nav__link">
     <span class="md-ellipsis">
-      Beginning Concepts
+      1. Synonymy (Synsets)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-concepts" class="md-nav__link">
+  <a href="#2-antonymy" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Concepts
+      2. Antonymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hypernymy-is-a-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Hypernymy (Is-a Relationship)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hyponymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Hyponymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-meronymy-part-whole-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Meronymy (Part-Whole Relationship)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-holonymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Holonymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-troponymy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Troponymy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-entailment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Entailment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-coordinate-terms-co-hyponyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Coordinate Terms (Co-Hyponyms)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-derivationally-related-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Derivationally Related Forms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-pertainyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Pertainyms
     </span>
   </a>
   
@@ -624,7 +844,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/graph-rag/blob/master/docs/concepts/wordnet.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -632,25 +852,67 @@
   
 
 
-<h1 id="graphrag-concepts">GraphRAG Concepts</h1>
-<h2 id="beginning-concepts">Beginning Concepts</h2>
-<ol>
-<li>LLMs</li>
-<li>Graph databases</li>
-<li>Vector stores</li>
-<li>RAG</li>
-<li>GraphRAG</li>
-<li><a href="prompts/">Prompts</a></li>
-<li><a href="ollama/">Ollama</a></li>
-</ol>
-<h2 id="advanced-concepts">Advanced Concepts</h2>
-<ol>
-<li>NLP Pipelines</li>
-<li>Entity Extraction</li>
-<li>Concept Extraction</li>
-<li>Concept Networks</li>
-<li><a href="wordnet/">Wordnet</a></li>
-</ol>
+<h1 id="wordnet">Wordnet</h1>
+<p>WordNet is a large, lexical database of the English language that groups words into sets of synonyms called synsets, each representing a distinct concept. </p>
+<p>These synsets are interconnected through various semantic relationships, such as synonymy, antonymy, hypernymy, hyponymy, meronymy, and holonymy, among others. WordNet organizes nouns, verbs, adjectives, and adverbs into a hierarchical structure that mirrors the conceptual relationships between words, making it a valuable resource for natural language processing (NLP) tasks such as word sense disambiguation, semantic analysis, and information retrieval.</p>
+<p>Developed at Princeton University, WordNet serves as both a dictionary and a thesaurus, providing comprehensive information about word meanings and their interconnections.</p>
+<p>In the WordNet system, various types of relationships link words (specifically, synsets, which are sets of synonyms representing a single concept) together. These relationships help in organizing the lexicon in a way that reflects semantic connections between concepts. Here are the primary types of work relationships in WordNet:</p>
+<h3 id="1-synonymy-synsets">1. <strong>Synonymy (Synsets)</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where two or more words have the same or nearly the same meaning.</li>
+<li><strong>Example</strong>: The words "car" and "automobile" are synonyms and belong to the same synset.</li>
+</ul>
+<h3 id="2-antonymy">2. <strong>Antonymy</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where two words have opposite meanings.</li>
+<li><strong>Example</strong>: "Hot" and "cold" are antonyms.</li>
+</ul>
+<h3 id="3-hypernymy-is-a-relationship">3. <strong>Hypernymy (Is-a Relationship)</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A hierarchical relationship where one word is a more general term (hypernym) for another.</li>
+<li><strong>Example</strong>: "Vehicle" is a hypernym of "car."</li>
+</ul>
+<h3 id="4-hyponymy">4. <strong>Hyponymy</strong></h3>
+<ul>
+<li><strong>Definition</strong>: The reverse of hypernymy, where one word is a more specific term (hyponym) under a broader category.</li>
+<li><strong>Example</strong>: "Car" is a hyponym of "vehicle."</li>
+</ul>
+<h3 id="5-meronymy-part-whole-relationship">5. <strong>Meronymy (Part-Whole Relationship)</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where one word denotes a part of something that the other word denotes.</li>
+<li><strong>Example</strong>: "Wheel" is a meronym of "car."</li>
+</ul>
+<h3 id="6-holonymy">6. <strong>Holonymy</strong></h3>
+<ul>
+<li><strong>Definition</strong>: The reverse of meronymy, where one word denotes a whole that contains the other word.</li>
+<li><strong>Example</strong>: "Car" is a holonym of "wheel."</li>
+</ul>
+<h3 id="7-troponymy">7. <strong>Troponymy</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where one verb is a more specific manner of doing another verb.</li>
+<li><strong>Example</strong>: "Stroll" is a troponym of "walk."</li>
+</ul>
+<h3 id="8-entailment">8. <strong>Entailment</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship between verbs where the action of one verb logically implies the action of another.</li>
+<li><strong>Example</strong>: "Snore" entails "sleep."</li>
+</ul>
+<h3 id="9-coordinate-terms-co-hyponyms">9. <strong>Coordinate Terms (Co-Hyponyms)</strong></h3>
+<ul>
+<li><strong>Definition</strong>: Words that share the same hypernym and are thus related as siblings in the hierarchy.</li>
+<li><strong>Example</strong>: "Dog" and "cat" are co-hyponyms under the hypernym "animal."</li>
+</ul>
+<h3 id="10-derivationally-related-forms">10. <strong>Derivationally Related Forms</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where words share the same root but are different parts of speech.</li>
+<li><strong>Example</strong>: "Run" (verb) and "runner" (noun).</li>
+</ul>
+<h3 id="11-pertainyms">11. <strong>Pertainyms</strong></h3>
+<ul>
+<li><strong>Definition</strong>: A relationship where an adjective is derived from a noun and indicates a relationship of belonging or pertaining to.</li>
+<li><strong>Example</strong>: "Musical" (adjective) is a pertainym of "music" (noun).</li>
+</ul>
+<p>These relationships in WordNet form a rich and interconnected structure that enables various applications in NLP, such as semantic similarity measurement, word sense disambiguation, and lexical database creation.</p>
 
 
 
@@ -686,7 +948,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../concept-networks/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Concept Networks">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -696,20 +958,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Concept Networks
               </div>
             </div>
           </a>
         
         
           
-          <a href="entity-extraction/" class="md-footer__link md-footer__link--next" aria-label="Next: Entity Extraction">
+          <a href="../graph-algorithms/" class="md-footer__link md-footer__link--next" aria-label="Next: Graph Algorithms">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Entity Extraction
+                Graph Algorithms
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -743,10 +1005,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>
