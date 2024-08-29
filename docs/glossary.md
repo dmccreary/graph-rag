@@ -1,10 +1,32 @@
 # Graph RAG Glossary
 
+#### Abstract Concepts
+
+An idea, quality, or notion that exists in thought or as an intellectual construct rather than as a physical or tangible object.
+
+Unlike concrete concepts, which refer to things that can be perceived through the senses (such as “tree” or “car”), abstract concepts represent intangible entities like emotions, relationships, moral values, theories, and principles. Examples of abstract concepts include ideas like “freedom,” “justice,” “happiness,” and “love.” These concepts often require a deeper level of cognitive processing and are critical in understanding complex, philosophical, or theoretical ideas.
+
+Examples of Abstract Concepts:
+
+1. **Emotions and Feeling:** happiness, sorrow, anger, pain
+2. **Qualities:** honesty, bravery, intelligence
+3. **Theories:** evolution, relativity
+4. **Values:** freedom, justice, equality
+5. **States:** peace, chaos, order
+
+Even small language models are good finding concrete entities.  However, there is additional processing time and cost associated with extracting abstract concepts from text and inserting them into a graph.  Qualities may also be inferred from adjectives that describe a person such as "an honest person".
+
 #### Community Detection
 
 Community detection is the process of identifying groups of nodes within a network that are more densely connected to each other than to the rest of the network. This technique is used to reveal the modular structure of networks, uncovering clusters or communities that share common properties or functions.
 
 For example, in social network analysis, community detection can help identify groups of users who frequently interact with each other, such as friend circles or interest groups.
+
+#### Concept Network
+
+A structured representation of related terms and concepts that captures the relationships between them, such as synonyms, alternate terms, abbreviations, broader terms, and narrower terms.
+
+Concept networks serve as a semantic map that links various expressions of an idea or entity, enabling the system to recognize and interpret different linguistic variations of the same concept or to bind a concept with opposite terms.
 
 #### Document Chunking
 
@@ -12,20 +34,21 @@ Document chunking is the process of dividing a large document into smaller, mana
 
 For example, in a question-answering system, document chunking enables the model to focus on specific sections of a document, improving accuracy and efficiency in finding relevant answers.
 
-#### Complex Sequential Question Answering
+#### Complex Sequential Question Answering (CSQA)
 
-**Abbreviation**: CSQA
 Complex Sequential Question Answering refers to a task in natural language processing that involves answering a series of interrelated questions where the context or the answers to previous questions impact subsequent questions. This task requires handling complex dependencies and reasoning chains, often relying on structured knowledge bases or graphs to provide accurate and context-aware responses. In GraphRAG, CSQA tasks benefit from the ability to retrieve and reason over graph-structured data that captures these intricate relationships​(GraphRAG-Survey).#### Entity Extraction
 
-Entity extraction in the GraphRAG process plays a critical role in identifying and linking entities mentioned in the input query to corresponding entities in a knowledge graph. This step is essential for effectively retrieving relevant information and establishing connections between the textual data and the structured graph data.
+#### Concrete Entities
 
-Entity extraction is often considered a pre-processing step in GraphRAG. It involves identifying key entities within the user's query and linking them to their corresponding nodes in the graph database. This ensures that the retrieval process can focus on the correct parts of the graph, thereby enhancing the relevance and accuracy of the retrieved information.
+Entities the correspond to physical items in the world.  These are often referred to as POLE entities (People, Organizations, Locations and Events).  These are often proper names and it is usually easy for even small language models to identify them.
 
-It is particularly crucial in the **Graph-Guided Retrieval** phase, where entities identified in the text are mapped to their graph representations. This mapping allows the retrieval algorithms to more accurately extract the relevant subgraphs, nodes, or paths that correspond to the query.
+Concrete entities are often contrasted with abstract [Abstract Concepts] 
 
-Entity Extraction** typically occurs at the beginning of the **Graph-Guided Retrieval** phase. After the graph-based indexing phase, where the graph is prepared and indexed for efficient querying, entity extraction takes place to identify which parts of the graph are relevant to the query. This step directly influences the subsequent retrieval processes, ensuring that the retrieval is focused and efficient.
+#### Entity Extraction
 
-Entity extraction is thus a foundational step in aligning the unstructured text query with the structured graph data, enabling the GraphRAG system to retrieve and generate more contextually relevant responses​(GraphRAG-Survey)​(GraphRAG-Survey).
+The process of identifying and categorizing key pieces of information (entities) from text, such as names of people, organizations, locations, events, and other concepts.
+
+These entities are often represented by proper nouns or specific phrases that are crucial to understanding the text's meaning.
 
 #### GNN-based Retriever
 
@@ -145,6 +168,12 @@ Retrieval-Augmented Generation is a methodology that integrates external knowled
 #### Subgraphs
 
 In GraphRAG, subgraphs refer to comprehensive subsets of a graph that encapsulate relational contexts within a larger structure. Retrieving subgraphs allows for capturing complex patterns, sequences, and dependencies, which are crucial for a deeper understanding of semantic connections in graph-based tasks​(GraphRAG-Survey).
+
+#### Synset
+
+A group of words or phrases that have similar meaning.
+
+For example, the words "baby", "infant" and "child" may be consider rough synonyms.
 
 #### Text-Attributed Graphs
 **Abbreviation**: TAGs<br/>

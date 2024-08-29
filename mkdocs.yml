@@ -10,11 +10,17 @@ nav:
   - Home: index.md
   - Graph RAG Concepts:
     - Introduction: concepts/index.md
+    - Entity Extraction: concepts/entity-extraction.md
+    - Concept Extraction: concepts/concept-extraction.md
+    - Concept Networks: concepts/concept-networks.md
+    - Wordnet: concepts/wordnet.md
+    - Graph Algorithms: concepts/graph-algorithms.md
     - Prompts: concepts/prompts.md
     - Ollama: concepts/ollama.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
+  - License: license.md
   - Contact: contact.md
  
 # CoderDojo Microsite Standards from here down

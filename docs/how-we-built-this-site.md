@@ -5,10 +5,7 @@ the rationale behind why we made various design choices.
 
 ## Python
 
-MicroSims are about how we use generative AI to create
-animations and simulations.  The language of AI
-is Python.  So we wanted to create a site that could
-be easily understood by Python developers.
+The language of data science, machine learning, and AI is Python.  So we wanted to create a site that could be easily understood by Python developers.  Mkdocs is the leading documentation tool used by Python developers.
 
 ## Mkdocs vs. Docusaurus
 

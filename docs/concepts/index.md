@@ -9,3 +9,11 @@
 5. GraphRAG
 6. [Prompts](./prompts.md)
 7. [Ollama](ollama.md)
+
+## Advanced Concepts
+
+1. NLP Pipelines
+2. Entity Extraction
+3. Concept Extraction
+4. Concept Networks
+5. [Wordnet](./wordnet.md)
