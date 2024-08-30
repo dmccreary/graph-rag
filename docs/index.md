@@ -1,4 +1,6 @@
-# Graph RAG
+# Learning Graph RAG
+
+![](./img/banner.png){: width="400px"}
 
 Welcome to our website for people learning about the powerful Graph-RAG pattern.
 
